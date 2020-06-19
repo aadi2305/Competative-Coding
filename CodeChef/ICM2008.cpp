@@ -6,8 +6,7 @@ using namespace std;
 int main()
 {
     int a, b,c,d,T;
-    T = 1;
-    //cin >> T;
+    cin >> T;
     cin >> a,b,c,d;
     while(a != b && a<b)
     {
@@ -16,7 +15,7 @@ int main()
             a =a + c;
             b =b+  d;
         }
-        else if(c<d)
+        else if(c<d)    
         {
             a =a + d;
              b =b+  c;
