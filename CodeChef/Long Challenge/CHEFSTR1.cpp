@@ -2,7 +2,7 @@
 #include <vector>
 #include <map>
 #include <list>
-#define ll long long
+#define ll unsigned long int
 
 using namespace std;
 
@@ -13,9 +13,9 @@ int main()
     for(int i = 0; i<T; i++)
     {
         ll N;
-        int total = 0,prev;
+        ll total = 0,prev;
         cin >> N;
-        vector <int> S[N];
+        vector <ll> S[N];
         for(int j = 0; j<N; j++)
         {
             ll input1;
@@ -26,7 +26,7 @@ int main()
             }
             else
             {
-                int add;
+                ll add;
                 if (input1 > prev)add = input1 - 1 - prev;
                 else if(input1 < prev)
                 {
